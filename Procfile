@@ -1,1 +1,1 @@
-web: node server.js $PORT
+web: node server.js $PORT $DATABASE_URL
