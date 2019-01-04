@@ -38,6 +38,5 @@ app.post('/imageurl', (req,res)=>{image.handleApiCall(req,res)})
 
 
 app.listen(process.env.PORT || 3000, ()=> {
-    console.log(`app is running on port ${process.env.PORT}`);
-    console.log(process.env.DATABASE_URL)
+    console.log(`app is running on port ${process.env.PORT} and ${process.env.DATABASE_URL}`);
 })
