@@ -14,7 +14,7 @@ const db = knex({
     connection: {
       host : '127.0.0.1',
       user : 'postgres',
-      password : 'ryansdata',
+      password : '',
       database : 'smartbrain'
     }
 });
@@ -42,13 +42,3 @@ app.post('/imageurl', (req,res)=>{image.handleApiCall(req,res)})
 app.listen(process.env.PORT || 3000, ()=> {
     console.log(`app is running on port ${process.env.PORT}`);
 })
-
-/*
-/ --> res=this is working
-/signin --> POST success/fail
-/register --> POST = user
-/profile/:userId --> GET = user
-/image --> PUT = count?
-
-
-*/
