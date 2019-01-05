@@ -9,11 +9,11 @@ const signin = require('./controllers/signin')
 const profile = require('./controllers/profile')
 const image = require('./controllers/image')
 
-let dburl = process.env.DATABASE_URL + '?ssl=true'
 const db = knex({
     client: 'pg',
     connection: {
-      connectionString : dburl,
+      connectionString : process.env.DATABASE_URL,
+      ssl: true,
     }
 });
 
