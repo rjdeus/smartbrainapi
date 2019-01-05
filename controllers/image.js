@@ -1,7 +1,7 @@
 const Clarifai = require('clarifai')
 
 const app = new Clarifai.App({
-    apiKey: '1f91f9e1b45f4cc9a579958df986be62'
+    apiKey: process.env.API_CLARIFAI
    });
 
 const handleApiCall = (req,res)=>{
